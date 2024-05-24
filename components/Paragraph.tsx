@@ -11,7 +11,10 @@ function Paragraph({text} : {text:string}) {
     const textElem = refText.current
     const scrollPosition = window.innerHeight / 2
     const elementTop = textElem?.getBoundingClientRect().top
-    if (elementTop && elementTop < scrollPosition) setAnimate(true)
+    if (elementTop && elementTop < scrollPosition) {
+      setAnimate(true)     
+      window.removeEventListener("scroll", handleScrool)
+    }
   }
 
   useEffect(() => {
@@ -19,7 +22,8 @@ function Paragraph({text} : {text:string}) {
   }, [])
 
   return (
-    <div className='w-screen flex justify-center sm:gap-16 gap-4 p-5'>
+    <>
+    <div className='w-screen justify-center hidden sm:flex sm:gap-3 md:gap-16 p-10'>
       <div 
       className={`w-1/3 flex justify-end`}>
       </div>
@@ -30,6 +34,14 @@ function Paragraph({text} : {text:string}) {
         <div className='md:w-2/3 w-full font-sans text-darkSnow'>{text}</div>
       </div>
     </div>
+
+    <div className='w-screen sm:hidden p-10'>
+      <div 
+      className="md:text-xl flex flex-col animate-appear-left">
+        <div className='md:w-2/3 w-full font-sans text-darkSnow'>{text}</div>
+      </div>
+    </div>
+    </>
   )
 }
 

@@ -16,6 +16,7 @@ const config: Config = {
         snow: "#FFFCFF",
         darkSnow: "rgb(224 222 222 / 0.9)",
         myBlack: "#090909",
+        bistre: "#181307",
       },
       fontFamily: {
         Bebas: ['"Bebas Neue"', "sans-serif"],

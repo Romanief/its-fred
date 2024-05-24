@@ -39,7 +39,7 @@ function BackgroundSide() {
       <div ref={sideLineRef} className="hidden sm:block h-screen fixed left-1/3 bottom-full bg-dimGray w-4 transition-all duration-1000 -z-10"></div>
 
 
-      <div ref={sideRef} className='fixed top-0 right-[-500px] h-screen flex flex-col justify-center transition-all'>
+      <div ref={sideRef} className='fixed top-0 right-[-500px] h-screen sm:flex hidden flex-col duration-300 justify-center transition-all'>
         <div className="flex p-5 hover:-translate-x-0 translate-x-3/4 transition bg-myBlack  hover:text-sheenGold">
           <FaGithub className="text-3xl"/>
           <a href="https://github.com/Romanief" className="ml-14 text-3xl text-inherit cursor-pointer">got to GitHub</a>
@@ -56,6 +56,20 @@ function BackgroundSide() {
             {copied ? "Copied!" : "copy email"}
           </p>
         </div>
+      </div>
+
+      <div className='fixed p-5 top-0 left-0 sm:hidden justify-around w-full transition-all flex bg-myBlack border-b border-dimGray'>
+        <a href="https://github.com/Romanief" className="text-3xl hover:text-sheenGold bg-inherit cursor-pointer">    
+          <FaGithub className="text-3xl cursor-pointer"/>
+        </a>
+        <a href="https://www.linkedin.com/in/federicoromaniello/" className="text-3xl hover:text-sheenGold bg-inherit cursor-pointer">          
+          <FaLinkedin className="text-3xl cursor-pointer"/>
+        </a>
+        <p 
+        onClick={() => copyToClipboard("federicoromaniellowork@outlook.com")} 
+        className="text-3xl cursor-pointer bg-inherit">
+          {copied ? "Copied!" : <FaRegEnvelopeOpen className="text-3xl cursor-pointer"/>}
+        </p>
       </div>
     </>
   )

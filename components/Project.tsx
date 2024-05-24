@@ -1,20 +1,20 @@
 "use client"
 
-import Image from 'next/image'
 import React, {useEffect, useRef, useState} from 'react'
 
 function Project({text, image, title, mt = 40, link} : {text:string, image?: string, title: string, mt?:number, link?: string}) {
   const [animate, setAnimate] = useState(false)
 
   const refText = useRef<HTMLDivElement>(null)
-  const refImg = useRef<HTMLDivElement>(null)
 
   function handleScrool() {
     const textElem = refText.current
-    const imgElem = refImg.current
     const scrollPosition = window.innerHeight / 2
     const elementTop = textElem?.getBoundingClientRect().top
-    if (elementTop && elementTop < scrollPosition) setAnimate(true)
+    if (elementTop && elementTop < scrollPosition) {
+      setAnimate(true)     
+      window.removeEventListener("scroll", handleScrool)
+    }
   }
 
   useEffect(() => {
@@ -22,17 +22,15 @@ function Project({text, image, title, mt = 40, link} : {text:string, image?: str
   }, [])
 
   return (
-    <div className={`w-screen flex justify-center sm:gap-16 gap-4 p-5 mt-${mt}`}>
-      <div ref={refImg} className={`w-1/3 flex justify-end ${animate ? "animate-appear-right" : "opacity-0"}`}>
-        {image && 
-          <div className='border border-snow aspect-square relative'>
-            <Image src={image} alt="Project image" fill></Image>
-          </div>}
+    <>
+    <div className={`w-screen sm:flex justify-center sm:gap-16 gap-16 p-10 hidden`} style={{marginTop: `${mt}px`}}>
+      <div className={`w-1/3 flex justify-end -translate-x-3 ${animate ? "animate-appear-right" : "opacity-0"}`}>
+        {image && <img src={image} alt="Project image" className='border h-min border-darkSnow aspect-square md:w-2/3 w-3/4 my-1'></img>}
       </div>
 
       <div 
       ref={refText} 
-      className={` md:text-xl w-2/3 flex flex-col
+      className={` md:text-xl w-2/3 flex -translate-x-8 md:translate-x-0 flex-col justify-center
       ${animate ? "animate-appear-left" : "opacity-0"}`}>
         <div className='text-3xl text-saffron'>
           {title}
@@ -46,6 +44,27 @@ function Project({text, image, title, mt = 40, link} : {text:string, image?: str
             </a>}
       </div>
     </div>
+
+    <div className={`w-screen flex flex-col gap-5 justify-center sm:hidden p-10`} style={{marginTop: `${mt}px`}}>
+      <div 
+      className={`w-full flex flex-col justify-center animate-appear-left`}>
+        <div className='text-3xl text-saffron'>
+          {title}
+        </div>
+        <div className='md:w-2/3 w-full font-sans text-darkSnow'>
+          {text}
+        </div>
+          {link && 
+            <a href={link} className="cursor-pointer text-darkSnow my-3 hover:text-sheenGold font-sans">
+              Click here and check it out!
+            </a>}
+      </div>
+
+      <div className={`w-full animate-appear-right`}>
+        {image && <img src={image} alt="Project image" className='border border-darkSnow aspect-square w-2/3 mx-auto my-1'></img>}
+      </div>
+    </div>
+    </>
   )
 }
 

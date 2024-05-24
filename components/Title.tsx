@@ -7,7 +7,7 @@ function Title() {
       <SlidingText
       text="Hey,"
       offsetX={-60}
-      offsetY={100}
+      offsetY={140}
       size={"90px"}
       color={"#FFFCFF"}
       delay={200}
@@ -17,7 +17,7 @@ function Title() {
       <SlidingText
         text="it's"
         offsetX={10}
-        offsetY={60}
+        offsetY={100}
         size={"80px"}
         color={"#FFFCFF"}
         delay={600}
@@ -27,7 +27,7 @@ function Title() {
       <SlidingText
         text="Fred"
         offsetX={0}
-        offsetY={-20}
+        offsetY={20}
         size={"170px"}
         color={"#E7BB41"}
         delay={400}
