@@ -39,29 +39,20 @@ body {
   }
 }
 
-@keyframes translate-sidebar {
-  0% {
-    transform: translate(0);
-  }
-
-  100% {
-    transform: translate(-100%);
-  }
-}
-
-@keyframes translate-from-left {
-  0% {
-    transform: translate(-100%);
-  }
-
-  100% {
-    transform: translate(0);
-  }
-}
-
 @keyframes appear-from-left {
   0% {
     transform: translate(-10px);
+    opacity: 0%;
+  }
+  100% {
+    transform: translate(0);
+    opacity: 100%;
+  }
+}
+
+@keyframes appear-from-right {
+  0% {
+    transform: translate(10px);
     opacity: 0%;
   }
   100% {
@@ -74,14 +65,10 @@ body {
   animation: translate-full-right 0.7s ease-in-out;
 }
 
-.animate-sidebar {
-  animation: translate-sidebar 0.7s ease-in-out;
-}
-
-.animate-translate-left {
-  animation: translate-from-left 0.3s ease-out;
-}
-
 .animate-appear-left {
   animation: appear-from-left 0.5s ease-out;
+}
+
+.animate-appear-right {
+  animation: appear-from-right 0.5s ease-out;
 }

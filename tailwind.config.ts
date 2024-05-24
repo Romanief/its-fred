@@ -14,7 +14,7 @@ const config: Config = {
         sheenGold: "#B39C4D",
         saffron: "#E7BB41",
         snow: "#FFFCFF",
-        darkSnow: "#e0dede",
+        darkSnow: "rgb(224 222 222 / 0.9)",
         myBlack: "#090909",
       },
       fontFamily: {
