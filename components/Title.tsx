@@ -3,7 +3,7 @@ import SlidingText from './SlidingText'
 
 function Title() {
   return (
-    <div>
+    <div className='h-[80vh] relative'>
       <SlidingText
       text="Hey,"
       offsetX={-60}
