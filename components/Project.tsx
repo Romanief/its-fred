@@ -73,9 +73,14 @@ function Project({
     <div className={`w-screen flex flex-col gap-5 justify-center sm:hidden p-10`} style={{marginTop: `${mt}px`}}>
       <div 
       className={`w-full flex flex-col justify-center animate-appear-left`}>
-        <div className='text-3xl text-saffron'>
-          {title}
-        </div>
+        <div className='flex gap-6 text-3xl'>     
+          <div className='text-3xl text-saffron'>
+            {title}
+          </div>
+            <a className='cursor-pointer h-full text-3xl px-5' href={git}>
+              <FaGitAlt className='cursor-pointer'/>
+            </a>
+          </div>
 
         <div className='md:w-2/3 w-full font-sans text-darkSnow'>
           {text}
@@ -86,14 +91,6 @@ function Project({
             <a href={link} className="cursor-pointer text-darkSnow my-3 hover:text-sheenGold font-sans">
               Click here and check it out!
             </a>
-          }
-
-          {
-            git && 
-            <div className='flex mt-5 text-darkSnow font-sans'>
-              See git repository: 
-              <a className='cursor-pointer h-full text-3xl px-5' href={git}><FaGitAlt className='cursor-pointer'/></a>
-            </div>
           }
       </div>
 
