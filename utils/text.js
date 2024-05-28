@@ -1,36 +1,39 @@
 export const description = 
-  `Hey, it's Fred! I am a self taught software developer coming from a background of Physiotherapy. 
-  I have been practicing with full stack development and AI through different courses and independent practice.
-  I am not good at explaining what I can do with words so check it out yourself with my projects below!`
+  `Hey, it's Fred! I am a self-taught software developer with a background in physiotherapy. 
+  I have been practicing full-stack development and AI through various courses and independent practice. 
+  I'm not good at explaining what I can do with words, so check out my projects below!`
 
 export const tttDescription = 
-  `This project is a simple Tic-Tac-Toe game built using vanilla TypeScript and Tailwind CSS, 
-  featuring an AI opponent powered by a depth-limited minimax algorithm optimised with alpha-beta pruning.`
+  `This project is a simple Tic-Tac-Toe game built using vanilla TypeScript and Tailwind CSS. 
+  It features an AI opponent powered by a depth-limited minimax algorithm optimized with alpha-beta pruning.`
 
 export const tttTech = `TypeScript, Tailwind, Vite`
 
 export const ndDescription = 
-  `This project is a fullstack app built in TypeScript and Python. 
-  It features a Neural Model built in Tensor Flow that identifies digits.`
+  `This project is a full-stack app built with TypeScript and Python. 
+  It features a neural model built with TensorFlow that identifies digits.`
 
 export const ndTech = "TypeScript, Tailwind, Vite, Python, Flask, TensorFlow, Numpy"
 
 export const shDescription = 
-  `This project is a simple NextJS e-shop that makes a call to an external API using SWR to render the items characteristics.
-  It shows features like dark and light mode, a shopping Cart and pagination.`
+  `
+  This project is a simple Next.js e-shop that makes calls to an external API using SWR to render item characteristics. 
+  It includes features like dark and light mode, a shopping cart, and pagination.`
 
 export const shTech = "TypeScript, NextJS, Tailwind, SWR"
 
 export const ff1 = 
-  `I actually made a similar model that recognises road signs, which is far more impressive right? 
-  Why did I then decided to use a digit model as a project then? 
-  Well turns out my dexterity skills need some refinement and it is far more challanging to draw road signs than it is to write digits. 
-  Long story short, I was embarassed about my drawings and used digits instead!`
+  `I actually made a similar model that recognizes road signs, which is far more impressive, right? 
+  So why did I decide to use a digit model for this project? Well, it turns out my dexterity skills need some refinement, 
+  and it's far more challenging to draw road signs than to write digits. 
+  Long story short, I was embarrassed by my drawings and used digits instead!`
 
 export const ff2 = 
-  `Did you know that I am quite good at yoga? I can do a very good handstand!
-  I actually was a professional ballet dancer, then I got injured so I had to change carreer and graduated as a Physio (with honours!).
-  Turns out when you train as an athlete for 12 years you get quite good at most of the sports and disciplines. I can do a very impressive headstand.`
+  `Did you know that I'm quite good at yoga? 
+  I can do a very good handstand! I was actually a professional ballet dancer, but after an injury, 
+  I had to change careers and graduated as a physiotherapist (with honors!). 
+  It turns out that when you train as an athlete for 12 years, you get quite good at most sports and disciplines. 
+  I can also do a very impressive headstand.`
 
 export const aboutSh = 
   `Yes, I know. I have done this project a while ago and I used the old /src directory instead of the /app directory. 
