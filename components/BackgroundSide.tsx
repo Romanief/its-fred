@@ -61,11 +61,9 @@ function BackgroundSide() {
         <a href="https://www.linkedin.com/in/federicoromaniello/" className="text-3xl hover:text-sheenGold bg-inherit cursor-pointer">          
           <FaLinkedin className="text-3xl cursor-pointer"/>
         </a>
-        <p 
-        onClick={() => copyToClipboard("federicoromaniellowork@outlook.com")} 
-        className="text-3xl cursor-pointer bg-inherit">
-          {copied ? "Copied!" : <FaRegEnvelopeOpen className="text-3xl cursor-pointer"/>}
-        </p>
+        <a href="mailto:federicoromaniellowork@outlook.com" className="text-3xl text-inherit cursor-pointer">
+          <FaRegEnvelopeOpen className="text-3xl"/>
+        </a>
       </div>
     </>
   )
