@@ -40,7 +40,7 @@ function Project({
     <>
     <div className={`w-screen sm:flex justify-center sm:gap-16 gap-16 p-10 hidden`} style={{marginTop: `${mt}px`}}>
       <div className={`w-1/3 flex justify-end -translate-x-3 ${animate ? "animate-appear-right" : "opacity-0"}`}>
-        {image && <img src={image} alt="Project image" className='border aspect-square border-darkSnow md:w-2/3 w-3/4 my-1'></img>}
+        {image && <img src={image} alt="Project image" className='aspect-square md:w-2/3 w-3/4 my-1'></img>}
       </div>
 
       <div 
@@ -103,7 +103,7 @@ function Project({
       </div>
 
       <div className={`w-full animate-appear-right`}>
-        {image && <img src={image} alt="Project image" className='border border-darkSnow aspect-square w-2/3 mx-auto my-1'></img>}
+        {image && <img src={image} alt="Project image" className='aspect-square w-2/3 mx-auto my-1'></img>}
       </div>
     </div>
     </>
