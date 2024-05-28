@@ -38,7 +38,7 @@ export const aboutSh =
   But this portfolio is entirely made in NextJS and it is using the latest features!`
 
 export const aboutBe = 
-  `Also, I have made other full stack project using NextJs for the front end and other frameworks for the backend such as Django. 
+  `Also, I have made other full stack projects using NextJs for the front end and other frameworks for the backend such as Django. 
   I then also discovered that you can use JavaScript for the backend, I had to make stuff using nodeJS and express! I also used Prisma as an ORM.
   Did i catch your attention? Then hurry up and go browse my GitHub!`
 
