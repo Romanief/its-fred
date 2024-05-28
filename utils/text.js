@@ -24,7 +24,7 @@ export const shTech = "TypeScript, NextJS, Tailwind, SWR"
 export const ff1 = 
   `I actually made a similar model that recognises road signs, which is far more impressive right? 
   Why did I then decided to use a digit model as a project then? 
-  Well turns out my artistic skills need some refinement and it is far more challanging to draw road signs than it is to write digits. 
+  Well turns out my dexterity skills need some refinement and it is far more challanging to draw road signs than it is to write digits. 
   Long story short, I was embarassed about my drawings and used digits instead!`
 
 export const ff2 = 
