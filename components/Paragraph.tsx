@@ -23,7 +23,7 @@ function Paragraph({text} : {text:string}) {
 
   return (
     <>
-    <div className='w-screen justify-center hidden sm:flex sm:gap-8 md:gap-16 p-10'>
+    <div className='w-screen justify-center hidden sm:flex sm:gap-8 md:gap-16 py-3 px-10'>
       <div 
       className={`w-1/3 flex justify-end`}>
       </div>

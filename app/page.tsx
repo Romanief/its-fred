@@ -1,8 +1,9 @@
 import Title from "@/components/Title";
 import Paragraph from "@/components/Paragraph"
 
-import { description, tttDescription, ndDescription, ndTech, shDescription } from "@/utils/text";
+import { description, tttDescription, ndDescription, ndTech, shDescription, ff1, aboutSh, aboutBe, ff2, theEnd, theEndAgain } from "@/utils/text";
 import Project from "@/components/Project";
+import Funfact from "@/components/Funfact";
 
 export default function Home() {
   return (
@@ -10,9 +11,15 @@ export default function Home() {
       <Title/>
       <Paragraph text={description}/>
       <Project text={ndDescription} title="Number Recognition" image="/number.jpeg" mt={100} git="https://github.com/Romanief/number-recognition"/>
-      <Project text={shDescription} title="e-shop" image="/shop.jpeg" mt={70} git="https://github.com/Romanief/shopapp/tree/main"/>
-      <Project text={tttDescription} title="Tic Tac Toe" image="/tictactoe.jpeg" mt={70} link="https://romanief.github.io/tictactoe/" git="https://github.com/Romanief/tictactoe"/>
-      <div className="h-[14vh]"></div>
+      <Funfact title="Fun fact!" texts={[ff1]}/>
+      <Project text={shDescription} title="e-shop" image="/shop.jpeg" mt={50} git="https://github.com/Romanief/shopapp/tree/main"/>
+      <Paragraph text={aboutSh}/>
+      <Paragraph text={aboutBe}/>
+      <Project text={tttDescription} title="Tic Tac Toe" image="/tictactoe.jpeg" mt={10} link="https://romanief.github.io/tictactoe/" git="https://github.com/Romanief/tictactoe"/>
+      <Funfact title="Useless fact!" texts={[ff2]}/>
+      <Paragraph text={theEnd}/>
+      <Paragraph text={theEndAgain}/>
+      <div className="h-[7vh]"></div>
     </main>
   );
 }
