@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         blackNight: "#141414",
         dimGray: "#656176",
+        darkDimGray: "#363224",
         sheenGold: "#B39C4D",
         saffron: "#E7BB41",
         darkSaffron: "#755f20",
