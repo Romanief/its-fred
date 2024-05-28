@@ -9,7 +9,7 @@ function Paragraph({text} : {text:string}) {
 
   function handleScrool() {
     const textElem = refText.current
-    const scrollPosition = window.innerHeight / 2
+    const scrollPosition = window.innerHeight / 1.5
     const elementTop = textElem?.getBoundingClientRect().top
     if (elementTop && elementTop < scrollPosition) {
       setAnimate(true)     
@@ -23,7 +23,7 @@ function Paragraph({text} : {text:string}) {
 
   return (
     <>
-    <div className='w-screen justify-center hidden sm:flex sm:gap-3 md:gap-16 p-10'>
+    <div className='w-screen justify-center hidden sm:flex sm:gap-8 md:gap-16 p-10'>
       <div 
       className={`w-1/3 flex justify-end`}>
       </div>

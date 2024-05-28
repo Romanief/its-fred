@@ -10,8 +10,8 @@ export default function Home() {
       <Title/>
       <Paragraph text={description}/>
       <Project text={ndDescription} title="Number Recognition" image="/number.jpeg" mt={200} git="https://github.com/Romanief/number-recognition"/>
-      <Project text={shDescription} title="e-shop" image="/shop.jpeg" mt={200} git="https://github.com/Romanief/shopapp/tree/main"/>
-      <Project text={tttDescription} title="Tic Tac Toe" image="/tictactoe.jpeg" mt={200} link="https://romanief.github.io/tictactoe/" git="https://github.com/Romanief/tictactoe"/>
+      <Project text={shDescription} title="e-shop" image="/shop.jpeg" mt={70} git="https://github.com/Romanief/shopapp/tree/main"/>
+      <Project text={tttDescription} title="Tic Tac Toe" image="/tictactoe.jpeg" mt={70} link="https://romanief.github.io/tictactoe/" git="https://github.com/Romanief/tictactoe"/>
       <div className="h-[14vh]"></div>
     </main>
   );

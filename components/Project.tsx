@@ -24,7 +24,7 @@ function Project({
 
   function handleScrool() {
     const textElem = refText.current
-    const scrollPosition = window.innerHeight / 2
+    const scrollPosition = window.innerHeight / 1.5
     const elementTop = textElem?.getBoundingClientRect().top
     if (elementTop && elementTop < scrollPosition) {
       setAnimate(true)     
