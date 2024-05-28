@@ -52,7 +52,10 @@ function Project({
           <div className='text-3xl text-saffron'>
             {title}
           </div>
-        </div>
+            <a className='cursor-pointer h-full text-3xl px-5' href={git}>
+              <FaGitAlt className='cursor-pointer'/>
+            </a>
+          </div>
 
         <div className='md:w-2/3 w-full font-sans text-darkSnow'>
           {text}
@@ -62,14 +65,6 @@ function Project({
             <a href={link} className="cursor-pointer text-darkSnow my-3 hover:text-sheenGold font-sans">
               Click here and check it out!
             </a>
-          }
-
-          {
-            git && 
-            <div className='flex mt-5 text-darkSnow font-sans'>
-              See git repository: 
-              <a className='cursor-pointer h-full text-3xl px-5' href={git}><FaGitAlt className='cursor-pointer'/></a>
-            </div>
           }
 
       </div>

@@ -1,8 +1,8 @@
 import React from 'react'
 
 import { BiLogoTypescript, BiLogoFlask } from "react-icons/bi";
-import { FaPython, FaCss3, FaBootstrap, FaReact, FaNodeJs } from "react-icons/fa6";
-import { SiTailwindcss, SiDjango, SiTensorflow , SiPrisma, SiExpress, SiSqlite} from "react-icons/si";
+import { FaPython, FaCss3, FaBootstrap, FaReact, FaNodeJs, FaGitAlt} from "react-icons/fa6";
+import { SiTailwindcss, SiDjango, SiTensorflow , SiPrisma, SiExpress, SiSqlite, SiSwr} from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 
 
@@ -13,9 +13,10 @@ function Techstack() {
         Techstack
       </div>
 
-      <div className='w-4/5 mx-auto flex flex-wrap justify-around *:basis-1/5 *:my-7 columns-3 text-center text-3xl md:text-5xl'>
+      <div className='w-4/5 mx-auto flex flex-wrap justify-around *:basis-1/4 *:my-7 columns-3 text-center text-3xl md:text-5xl'>
         <BiLogoTypescript/>
         <RiNextjsFill/>
+        <SiSwr/>
         <SiTensorflow/>
         <FaReact/>
         <FaNodeJs/>
@@ -28,6 +29,7 @@ function Techstack() {
         <BiLogoFlask/>
         <SiDjango/>
         <SiSqlite/>
+        <FaGitAlt/>
       </div>
     </div>
   )
