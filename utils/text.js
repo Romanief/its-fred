@@ -11,14 +11,13 @@ export const tttTech = `TypeScript, Tailwind, Vite`
 
 export const ndDescription = 
   `This project is a fullstack app built in TypeScript and Python. 
-  On the frontend the user is able to draw a digit into a canvas to then send it to a flask server.  On the backend, the server will then use a neural model built using Tensor flow to predict the digit and return the prediction
-  that will then be displayed onto the frontend`
+  It features a Neural Model built in Tensor Flow that identifies digits.`
 
 export const ndTech = "TypeScript, Tailwind, Vite, Python, Flask, TensorFlow, Numpy"
 
 export const shDescription = 
-  `This project is a simple NextJS e-shop that makes a call to an external API using SWR to render the items name, description, image, price and ratings.
-  It uses tailwindCSS and shows features like dark and light mode, a shopping Cart and pagination.`
+  `This project is a simple NextJS e-shop that makes a call to an external API using SWR to render the items characteristics.
+  It shows features like dark and light mode, a shopping Cart and pagination.`
 
 export const shTech = "TypeScript, NextJS, Tailwind, SWR"
 
