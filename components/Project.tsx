@@ -45,7 +45,7 @@ function Project({
 
       <div 
       ref={refText} 
-      className={` md:text-xl w-2/3 flex -translate-x-8 md:translate-x-0 flex-col justify-center
+      className={` md:text-xl w-2/3 flex -ml-8 md:ml-0 flex-col justify-center transition-all
       ${animate ? "animate-appear-left" : "opacity-0"}`}>
         
         <div className='flex gap-6 text-3xl'>     
