@@ -50,11 +50,7 @@ function BackgroundSide() {
         </div>
         <div className="flex p-5 hover:-translate-x-0 translate-x-3/4 transition bg-myBlack hover:text-sheenGold">
           <FaRegEnvelopeOpen className="text-3xl"/>
-          <p 
-          onClick={() => copyToClipboard("federicoromaniellowork@outlook.com")} 
-          className="ml-14 text-3xl text-inherit cursor-pointer">
-            {copied ? "Copied!" : "copy email"}
-          </p>
+          <a href="mailto:federicoromaniellowork@outlook.com" className="ml-14 text-3xl text-inherit cursor-pointer">send an email</a>
         </div>
       </div>
 
