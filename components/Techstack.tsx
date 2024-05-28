@@ -8,7 +8,7 @@ import { RiNextjsFill } from "react-icons/ri";
 
 function Techstack() {
   return (
-    <div className='w-screen mt-40 relative pb-10 pt-5 bg-myBlack border-y-2 border-dimGray'>
+    <div className='w-screen mt-40 relative pb-10 pt-5 bg-myBlack border-y border-dimGray'>
       <div className='text-center w-full text-7xl py-2 mb-3'>
         Techstack
       </div>
