@@ -1,7 +1,7 @@
 export const description = 
   `Hey, it's Fred! I am a self taught software developer coming from a background of Physiotherapy. 
   I have been practicing with full stack development and AI through different courses and independent practice.
-  I am not good at explaining myself so check out yourself with my projects below!`
+  I am not good at explaining what I can do with words so check it out yourself with my projects below!`
 
 export const tttDescription = 
   `This project is a simple Tic-Tac-Toe game built using vanilla TypeScript and Tailwind CSS, 
@@ -17,7 +17,7 @@ export const ndDescription =
 export const ndTech = "TypeScript, Tailwind, Vite, Python, Flask, TensorFlow, Numpy"
 
 export const shDescription = 
-  `This project is a simple NextJS e-shop that makes a call to an external AP using SWR to render the items name, description, image, price and ratings.
+  `This project is a simple NextJS e-shop that makes a call to an external API using SWR to render the items name, description, image, price and ratings.
   It uses tailwindCSS and shows features like dark and light mode, a shopping Cart and pagination.`
 
 export const shTech = "TypeScript, NextJS, Tailwind, SWR"
