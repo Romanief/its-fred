@@ -21,7 +21,6 @@ export default function Home() {
       <Funfact title="Useless fact!" texts={[ff2]}/>
       {/* <Paragraph text={theEnd}/>
       <Paragraph text={theEndAgain}/> */}
-      <div className="h-[7vh]"></div>
     </main>
   );
 }
