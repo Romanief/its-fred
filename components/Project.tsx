@@ -1,8 +1,23 @@
 "use client"
 
 import React, {useEffect, useRef, useState} from 'react'
+import { FaGitAlt } from "react-icons/fa6";
 
-function Project({text, image, title, mt = 40, link} : {text:string, image?: string, title: string, mt?:number, link?: string}) {
+function Project({
+  text, 
+  image, 
+  title, 
+  mt = 40, 
+  link,
+  git
+}: {
+  text:string, 
+  image?: string, 
+  title: string, 
+  mt?:number, 
+  link?: string,
+  git? :string
+}) {
   const [animate, setAnimate] = useState(false)
 
   const refText = useRef<HTMLDivElement>(null)
@@ -32,16 +47,31 @@ function Project({text, image, title, mt = 40, link} : {text:string, image?: str
       ref={refText} 
       className={` md:text-xl w-2/3 flex -translate-x-8 md:translate-x-0 flex-col justify-center
       ${animate ? "animate-appear-left" : "opacity-0"}`}>
-        <div className='text-3xl text-saffron'>
-          {title}
+        
+        <div className='flex gap-6 text-3xl'>     
+          <div className='text-3xl text-saffron'>
+            {title}
+          </div>
         </div>
+
         <div className='md:w-2/3 w-full font-sans text-darkSnow'>
           {text}
         </div>
+
           {link && 
             <a href={link} className="cursor-pointer text-darkSnow my-3 hover:text-sheenGold font-sans">
               Click here and check it out!
-            </a>}
+            </a>
+          }
+
+          {
+            git && 
+            <div className='flex mt-5 text-darkSnow font-sans'>
+              See git repository: 
+              <a className='cursor-pointer h-full text-3xl px-5' href={git}><FaGitAlt className='cursor-pointer'/></a>
+            </div>
+          }
+
       </div>
     </div>
 
@@ -51,13 +81,25 @@ function Project({text, image, title, mt = 40, link} : {text:string, image?: str
         <div className='text-3xl text-saffron'>
           {title}
         </div>
+
         <div className='md:w-2/3 w-full font-sans text-darkSnow'>
           {text}
         </div>
-          {link && 
+
+          {
+            link && 
             <a href={link} className="cursor-pointer text-darkSnow my-3 hover:text-sheenGold font-sans">
               Click here and check it out!
-            </a>}
+            </a>
+          }
+
+          {
+            git && 
+            <div className='flex mt-5 text-darkSnow font-sans'>
+              See git repository: 
+              <a className='cursor-pointer h-full text-3xl px-5' href={git}><FaGitAlt className='cursor-pointer'/></a>
+            </div>
+          }
       </div>
 
       <div className={`w-full animate-appear-right`}>

@@ -8,3 +8,10 @@ export const tttDescription =
   featuring an AI opponent powered by a depth-limited minimax algorithm optimised with alpha-beta pruning.`
 
 export const tttTech = `TypeScript, Tailwind, Vite`
+
+export const ndDescription = 
+  `This project is a fullstack app built in TypeScript and Python. 
+  On the frontend the user is able to draw a digit into a canvas to then send it to a flask server.  On the backend, the server will then use a neural model built using Tensor flow to predict the digit and return the prediction
+  that will then be displayed onto the frontend`
+
+export const ndTech = "TypeScript, Tailwind, Vite, Python, Flask, TensorFlow, Numpy"
