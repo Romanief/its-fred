@@ -1,4 +1,5 @@
 import BackgroundSide from "@/components/BackgroundSide";
+import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 import "./globals.css";
 
@@ -19,9 +20,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/f.ico" />
       </head>
-      <body>
+      <body className="flex flex-col">
         {children}
         <BackgroundSide/>
+        <Footer/>
       </body>
     </html>
   );
