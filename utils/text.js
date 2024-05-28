@@ -15,3 +15,9 @@ export const ndDescription =
   that will then be displayed onto the frontend`
 
 export const ndTech = "TypeScript, Tailwind, Vite, Python, Flask, TensorFlow, Numpy"
+
+export const shDescription = 
+  `This project is a simple NextJS e-shop that makes a call to an external AP using SWR to render the items name, description, image, price and ratings.
+  It uses tailwindCSS and shows features like dark and light mode, a shopping Cart and pagination.`
+
+export const shTech = "TypeScript, NextJS, Tailwind, SWR"
