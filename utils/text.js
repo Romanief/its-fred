@@ -26,7 +26,7 @@ export const ff1 =
   `I actually made a similar model that recognises road signs, which is far more impressive right? 
   Why did I then decided to use a digit model as a project then? 
   Well turns out my artistic skills need some refinement and it is far more challanging to draw road signs than it is to write digits. 
-  Long story short, I was embarased about my drawings and used digits instead!`
+  Long story short, I was embarassed about my drawings and used digits instead!`
 
 export const ff2 = 
   `Did you know that I am quite good at yoga? I can do a very good handstand!
@@ -40,7 +40,7 @@ export const aboutSh =
 export const aboutBe = 
   `Also, I have made other full stack projects using NextJs for the front end and other frameworks for the backend such as Django. 
   I then also discovered that you can use JavaScript for the backend, I had to make stuff using nodeJS and express! I also used Prisma as an ORM.
-  Did i catch your attention? Then hurry up and go browse my GitHub!`
+  Did I catch your attention? Then hurry up and go browse my GitHub!`
 
   export const theEnd = 
   `Well, this is the end of my website (for now!) but I'm glad you arrived all the way here!
@@ -48,4 +48,4 @@ export const aboutBe =
 
   export const theEndAgain = 
   `If you don't want to send me an email but still want to know more about me then you can either check my GitHub or look me up on linkedIn, 
-  just click on the icons on the border of the screen and you'll be magically sent there!`
+  just click on the icons on the border of the screen and you'll be magically sent there. Ciao!`
