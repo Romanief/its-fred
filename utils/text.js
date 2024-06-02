@@ -10,8 +10,9 @@ export const tttDescription =
 export const tttTech = `TypeScript, Tailwind, Vite`
 
 export const ndDescription = 
-  `This project is a full-stack app built with TypeScript and Python. 
-  It features a neural model built with TensorFlow that identifies digits.`
+  `This project is a full-stack app featuring an AI using classification, a supervised machine learning method
+  where the model tries to predict the correct label of a given input data. It is built with TypeScript and Python. 
+  It features a neural model built with TensorFlow that classifies digits hosted onto a Flask server.`
 
 export const ndTech = "TypeScript, Tailwind, Vite, Python, Flask, TensorFlow, Numpy"
 

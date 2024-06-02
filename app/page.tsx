@@ -12,7 +12,7 @@ export default function Home() {
       <Title/>
       <Paragraph text={description}/>
       <Techstack/>
-      <Project text={ndDescription} title="Neural Model" image="/number.jpeg" mt={100} git="https://github.com/Romanief/number-recognition"/>
+      <Project text={ndDescription} title="Image classification" image="/number.jpeg" mt={100} git="https://github.com/Romanief/number-recognition"/>
       <Funfact title="Fun fact!" texts={[ff1]}/>
       <Project text={tttDescription} title="Tic Tac Toe" image="/tictactoe.jpeg" mt={10} link="https://romanief.github.io/tictactoe/" git="https://github.com/Romanief/tictactoe"/>
       <Project text={shDescription} title="e-shop" image="/shop.jpeg" mt={50} git="https://github.com/Romanief/shopapp/tree/main"/>
