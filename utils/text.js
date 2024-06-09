@@ -23,6 +23,11 @@ export const shDescription =
 
 export const shTech = "TypeScript, NextJS, Tailwind, SWR"
 
+export const edcDescription = 
+`
+This is a Django app that simulates a physiotherapy caseload manager for the Emergency Department featuring a full CRUD API, user authentications and data filtering and manipulation
+`
+
 export const ff1 = 
   `I actually made a similar model that recognizes road signs, which is far more impressive, right? 
   So why did I decide to use a digit model for this project? Well, it turns out my dexterity skills need some refinement, 
