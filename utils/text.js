@@ -25,7 +25,7 @@ export const shTech = "TypeScript, NextJS, Tailwind, SWR"
 
 export const edcDescription = 
 `
-This is a Django app that simulates a physiotherapy caseload manager for the Emergency Department featuring a full CRUD API, user authentications and data filtering and manipulation
+This is a fully tested, Django app that simulates a physiotherapy caseload manager for the Emergency Department featuring a full CRUD API, user authentications, multiple error handling and data filtering and manipulation.
 `
 
 export const ff1 = 
