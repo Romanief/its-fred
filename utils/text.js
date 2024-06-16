@@ -10,23 +10,20 @@ export const tttDescription =
 export const tttTech = `TypeScript, Tailwind, Vite`
 
 export const ndDescription = 
-  `This project is a full-stack app featuring an AI using classification, a supervised machine learning method
-  where the model tries to predict the correct label of a given input data. It is built with TypeScript and Python. 
+  `This project is a full-stack app featuring an AI that predicts the correct label of a given input data. It is built with TypeScript and Python. 
   It features a neural model built with TensorFlow that classifies digits hosted onto a Flask server.`
 
 export const ndTech = "TypeScript, Tailwind, Vite, Python, Flask, TensorFlow, Numpy"
 
 export const shDescription = 
-  `
-  This project is a simple Next.js e-shop that makes calls to an external API using SWR to render item characteristics. 
+  `This project is a simple Next.js e-shop that makes calls to an external API using SWR to render item characteristics. 
   It includes features like dark and light mode, a shopping cart, and pagination.`
 
 export const shTech = "TypeScript, NextJS, Tailwind, SWR"
 
 export const edcDescription = 
-`
-This is a fully tested, Django app that simulates a physiotherapy caseload manager for the Emergency Department featuring a full CRUD API, user authentications, multiple error handling and data filtering and manipulation.
-`
+  `This is a fully tested, Django app that simulates a physiotherapy caseload manager for the Emergency Department 
+  featuring a full CRUD API, user authentications, multiple error handling and data filtering and manipulation.`
 
 export const ff1 = 
   `I actually made a similar model that recognizes road signs, which is far more impressive, right? 
