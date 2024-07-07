@@ -1,7 +1,12 @@
 export const description = 
-  `Hey, it's Fred! I am a self-taught software developer with a background in physiotherapy. 
-  I have been practicing full-stack development and AI through various courses and independent practice. 
-  I'm not good at explaining what I can do with words, so check out my projects below!`
+  `Hey, it's Fred! I am a self-taught software
+  developer, former professional ballet
+  dancer, and current NHS physiotherapist.
+  My dedication to perfection has turned my
+  development hobby into a complete full-
+  stack skillset, and I’d love to show you what
+  I can do. Below are my newest applications
+  of my skills!`
 
 export const tttDescription = 
   `This project is a simple Tic-Tac-Toe game built using vanilla TypeScript and Tailwind CSS. 
